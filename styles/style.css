@@ -60,11 +60,13 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 30px;
   height: 298px;
   overflow: auto;
-  overflow-x: auto;
 }
+
+.content__list-item:not(:last-of-type) {
+  margin-bottom: 30px;
+} 
 
 .content__details {
   display: flex;
@@ -113,7 +115,6 @@ ol {
 
 .content__video-card-description-container {
   min-width: 200px;
-  min-height: 103px;
 }
 
 .search-form__fieldset-title {
@@ -210,7 +211,7 @@ ol {
 
 .search-form__label {
   display: flex;
-  align-content: center;
+  align-items: center;
   gap: 5px;
   width: fit-content;
   cursor: pointer;
@@ -249,8 +250,8 @@ ol {
   border-bottom: solid #fff 1px;
   padding-top: 4px;
   color: #fff;
-  font-family: inherit;
-  line-height: 20px;
+	line-height: 21.6px;
+	font-size: 18px;
   background-color: transparent;
 }
 
@@ -287,9 +288,6 @@ ol {
 }
 
 /* состояния чек-боксов*/
-input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
-  background-color: #000;
-}
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::before {
   content: "";
